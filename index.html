@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>— Nadia's Lending Inc. —</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">Nadia's Lending</a>
+      <nav class="main-nav" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="button">Login</a>
+        <a href="register.html" class="button outline">Register</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title">Fast. Simple. Trusted.</h1>
+        <p>Apply for loans online, track your repayment schedule, and manage payments—securely and easily.</p>
+        <div class="cta">
+          <a href="register.html" class="button large">Apply Now</a>
+          <a href="about.html" class="button outline">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features container" aria-labelledby="features-title">
+      <h2 id="features-title">Features</h2>
+      <div class="grid">
+        <article>
+          <h3>Online Application</h3>
+          <p>Submit loan applications without visiting the office</p>
+        </article>
+        <article>
+          <h3>Automated Computation</h3>
+          <p>Interest and amortization schedules are calculated automatically</p>
+        </article>
+        <article>
+          <h3>Admin Dashboard</h3>
+          <p>Management can review, approve, and view reports</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="how container" aria-labelledby="how-title">
+      <h2 id="how-title">How it works</h2>
+      <ol>
+        <li>Create an account and apply for a loan</li>
+        <li>System computes payment schedule and notifies admin</li>
+        <li>Admin approves and the customer pays online or in-store</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Nadia's Lending Inc. &middot; All rights reserved.</p>
+      <nav aria-label="Footer">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
