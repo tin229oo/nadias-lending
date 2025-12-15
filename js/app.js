@@ -65,6 +65,13 @@
   // START: Page specific wiring (Single DOMContentLoaded)
   // ===============================================
   document.addEventListener('DOMContentLoaded', () => {
+
+        // ==========================================
+        // *** PROOF TEST: CHECK CONSOLE FOR THIS MESSAGE ***
+        // ==========================================
+        console.log("APP.JS LOADED AND DOM READY."); 
+        // ==========================================
+
     
     // --- Shared Utilities ---
     // Set year in footer
