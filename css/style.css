@@ -14,9 +14,11 @@ html, body {
 /* Basic reset */
 * { box-sizing: border-box; }
 
-/* --- FIX FOR SPACE ABOVE HEADER --- */
+/* --- FIXES FOR HEADER SPACE AND ALIGNMENT --- */
 body { padding-top: 0 !important; }
 .site-header { margin-top: 0 !important; }
+main { margin-top: 0; padding-top: 0; } /* NEW FIX: Reset main container top space */
+h1 { margin-top: 0; } /* NEW FIX: Reset H1 top space */
 /* ---------------------------------- */
 
 /* Layout container */
