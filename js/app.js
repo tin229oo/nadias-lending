@@ -12,7 +12,7 @@
   if(!db){
     db = {users:[],loans:[],transactions:[],nextLoanId:1};
     // admin default
-    db.users.push({id:1,name:'Administrator',email:'admin@nadia.local',phone:'',password:'admin123',role:'admin'});
+    db.users.push({id:1,name:'Administrator',email:'admin',phone:'',password:'Pa$$word1',role:'admin'});
     localStorage.setItem('nadalend_db',JSON.stringify(db));
   }
 
@@ -210,3 +210,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 })();
+
