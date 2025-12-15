@@ -1,37 +1,42 @@
-/* --- START: Replace entire css/style.css with this --- */
+/* --- START: Replace entire css/style.css with this clean version --- */
 
 /* Force top-level background before anything else */
 html, html * { -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
 html, body {
-  height: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  background: linear-gradient(180deg, #d8f3dc 0%, #b7e4c7 40%, #74c69d 100%) !important;
-  background-attachment: fixed !important;
-  background-size: cover !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: linear-gradient(180deg, #d8f3dc 0%, #b7e4c7 40%, #74c69d 100%) !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
 }
 
 /* Basic reset */
 * { box-sizing: border-box; }
 
+/* --- FIX FOR SPACE ABOVE HEADER --- */
+body { padding-top: 0 !important; }
+.site-header { margin-top: 0 !important; }
+/* ---------------------------------- */
+
 /* Layout container */
 :root{
-  --max-width: 1100px;
-  --card-bg: #ffffff;
-  --text: #081c15;
-  --accent: #2b6cb0;
+  --max-width: 1100px;
+  --card-bg: #ffffff;
+  --text: #081c15;
+  --accent: #2b6cb0;
 }
 body {
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: var(--text);
-  line-height: 1.45;
-  -webkit-font-smoothing:antialiased;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--text);
+  line-height: 1.45;
+  -webkit-font-smoothing:antialiased;
 }
 
 /* Ensure hero does NOT cover gradient with white */
 .hero {
-  padding: 3rem 0;
-  background: transparent !important;
+  padding: 3rem 0;
+  background: transparent !important;
 }
 
 /* Header */
@@ -39,6 +44,11 @@ body {
 .site-header .container { display:flex; align-items:center; justify-content:space-between; gap:1rem; }
 .logo { font-weight:700; color: #1b4332; text-decoration:none; font-size:1.1rem; }
 .main-nav a { margin-left:1rem; color: rgba(11,33,23,0.8); text-decoration:none; }
+
+/* --- HEADER HEIGHT FIX (Prevent wrapping) --- */
+.main-nav { white-space: nowrap; } 
+/* --------------------------------------------- */
+
 .button, .btn, .btn-like { display:inline-block; padding:.45rem .9rem; border-radius:8px; background:#2b6cb0; color:#fff; text-decoration:none; border:none; }
 .button.outline { background:transparent; border:1px solid #2b6cb0; color:#2b6cb0; }
 
@@ -62,7 +72,7 @@ footer.site-footer { padding:1rem 0; background: transparent; border-top: 1px so
 
 /* Small screens */
 @media (max-width: 700px) {
-  .main-nav { display:none; }
+  .main-nav { display:none; }
 }
 
 /* Accessibility focus */
@@ -70,27 +80,25 @@ a:focus, button:focus, input:focus, textarea:focus { outline: 3px solid rgba(20,
 
 /* ABOUT PAGE STYLING */
 .about-page {
-  min-height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .about-page .content {
-  max-width: 800px;
+  max-width: 800px;
 }
 
 .about-page h1 {
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
-  margin-bottom: 1.5rem;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  margin-bottom: 1.5rem;
 }
 
 .about-page p {
-  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
-  line-height: 1.7;
-  margin-bottom: 1rem;
+  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  line-height: 1.7;
+  margin-bottom: 1rem;
 }
-
-
 /* --- END --- */
