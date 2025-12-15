@@ -14,7 +14,6 @@
       <a href="dashboard.html" class="logo">Dashboard</a>
       <nav class="main-nav" aria-label="User Navigation">
         <a href="transactions.html">Transactions</a>
-        <a href="about.html">About</a>
         <a href="#" id="logoutBtn">Logout</a>
       </nav>
     </div>
@@ -37,11 +36,12 @@
       </ul>
     </section>
   </main>
-  
+
   <div class="modal" id="loanModal" aria-hidden="true">
     <div class="modal-content" role="dialog" aria-modal="true">
       <button class="close" id="closeModal">×</button>
       <h3>Apply for Loan</h3>
+
       <form id="loanForm">
         <label for="amount">Loan Amount (PHP)</label>
         <input id="amount" name="amount" type="number" min="1000" required>
@@ -50,7 +50,7 @@
         <input id="term" name="term" type="number" min="1" required>
 
         <label for="rate">Annual Interest Rate (%)</label>
-        <input id="rate" name="rate" type="number" step="0.01" value="12" required>
+        <input id="rate" name="rate" type="number" readonly>
 
         <button class="button" type="submit">Submit Application</button>
       </form>
