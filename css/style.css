@@ -48,6 +48,16 @@ body {
 /* Forms */
 input, textarea, select { width:100%; padding:.6rem; border:1px solid #cbd5e1; border-radius:6px; margin: .4rem 0 1rem; }
 
+/* --- NEW FIX FOR FORM ALIGNMENT --- */
+label {
+    display: block; 
+    text-align: left; 
+}
+/* This targets the submit button in the form */
+#registerForm .button, #loginForm .button {
+    width: 100%; 
+}
+
 /* Modal */
 .modal { position:fixed; left:0; right:0; top:0; bottom:0; display:none; align-items:center; justify-content:center; background:rgba(2,6,23,0.5) !important; }
 .modal[aria-hidden="false"] { display:flex !important; }
@@ -94,3 +104,4 @@ a:focus, button:focus, input:focus, textarea:focus { outline: 3px solid rgba(20,
 
 
 /* --- END --- */
+
