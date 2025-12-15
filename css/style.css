@@ -1,18 +1,24 @@
-/* --- START: Replace entire css/style.css with this --- */
-
-/* Force top-level background before anything else */
-html, html * { -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
-html, body {
-  height: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  background: linear-gradient(180deg, #d8f3dc 0%, #b7e4c7 40%, #74c69d 100%) !important;
-  background-attachment: fixed !important;
-  background-size: cover !important;
-}
+/* --- START: Replace entire css/style.css with this clean version --- */
 
 /* Basic reset */
 * { box-sizing: border-box; }
+
+/* Force top-level background/height for gradient */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* RESTORED GRADIENT DEFINITION - Removed !important for stability */
+  background: linear-gradient(180deg, #d8f3dc 0%, #b7e4c7 40%, #74c69d 100%);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+html, html * { -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+
 
 /* Layout container */
 :root{
@@ -40,9 +46,9 @@ body {
 .logo { font-weight:700; color: #1b4332; text-decoration:none; font-size:1.1rem; }
 .main-nav a { margin-left:1rem; color: rgba(11,33,23,0.8); text-decoration:none; }
 
-/* --- HEADER HEIGHT FIX: This prevents links from wrapping and increasing header size --- */
+/* --- HEADER HEIGHT FIX (Prevent wrapping) --- */
 .main-nav { white-space: nowrap; }
-/* ------------------------------------------------------------------------------------ */
+/* --------------------------------------------- */
 
 .button, .btn, .btn-like { display:inline-block; padding:.45rem .9rem; border-radius:8px; background:#2b6cb0; color:#fff; text-decoration:none; border:none; }
 .button.outline { background:transparent; border:1px solid #2b6cb0; color:#2b6cb0; }
